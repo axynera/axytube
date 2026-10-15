@@ -97,7 +97,7 @@
     "README.md",
     "LICENSE"
   ],
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@bufbuild/protobuf": "^2.0.0",
     "fflate": "^0.8.2",
