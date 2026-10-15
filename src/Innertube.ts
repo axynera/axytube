@@ -57,8 +57,8 @@ import {
  *
  * @example
  * ```ts
- * import { Innertube, UniversalCache } from 'youtubei.js';
- * const innertube = await Innertube.create({ cache: new UniversalCache(true)});
+ * import { Axytube, UniversalCache } from 'axytube.js';
+ * const axytube = await Axytube.create({ cache: new UniversalCache(true)});
  * ```
  */
 export default class Innertube {
