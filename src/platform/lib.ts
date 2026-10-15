@@ -7,5 +7,7 @@ export * from '../utils/index.js';
 
 export * from '../Innertube.js';
 export { default as Innertube } from '../Innertube.js';
+/** Branded alias for the Axytube client. */
+export { default as Axytube } from '../Innertube.js';
 
 export default Innertube;
