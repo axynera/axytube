@@ -12,26 +12,32 @@ jobs:
   import:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone upstream and rebrand
+      - name: Check out Axytube repository
+        uses: actions/checkout@v4
+
+      - name: Clone upstream, rebrand, and import source
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          cp "$GITHUB_WORKSPACE/.github/workflows/import-upstream.yml" /tmp/import-upstream.yml
-          git clone https://github.com/LuanRT/YouTube.js.git upstream
-          cd upstream
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git clone https://github.com/LuanRT/YouTube.js.git /tmp/upstream
+          cd /tmp/upstream
           npm pkg set name="axytube.js"
           npm pkg set repository.url="git+https://github.com/axynera/axytube.git"
           npm pkg set bugs.url="https://github.com/axynera/axytube/issues"
           npm pkg set homepage="https://github.com/axynera/axytube#readme"
           sed -i 's/youtubei\.js/axytube.js/g' README.md
           sed -i 's/YouTube\.js/Axytube.js/g' README.md
-          rm -rf .github/workflows
-          mkdir -p .github/workflows
-          cp /tmp/import-upstream.yml .github/workflows/import-upstream.yml
+
+          cd "$GITHUB_WORKSPACE"
+          rsync -a --delete --exclude='.git' --exclude='.github/workflows/' /tmp/upstream/ ./
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
+          if git diff --cached --quiet; then
+            echo "No source changes to import."
+            exit 0
+          fi
           git commit -m "Import and rebrand YouTube.js as axytube.js"
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/axynera/axytube.git"
-          git push --force origin HEAD:main
+          git push origin HEAD:main
