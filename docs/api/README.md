@@ -1,6 +1,8 @@
-# youtubei.js
+# Axytube.js
 
 ## Namespaces
+
+> This API reference was generated from the inherited source tree. Run `npm run build:docs` to regenerate it with the Axytube project name.
 
 - [APIResponseTypes](youtubei.js/namespaces/APIResponseTypes/README.md)
 - [BinarySerializer](youtubei.js/namespaces/BinarySerializer/README.md)
