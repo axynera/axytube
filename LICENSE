@@ -1,5 +1,37 @@
-MIT License
+AXYNERA LICENSE
+Version 1.0 — October 16, 2026
 
+Copyright (c) 2026 Axynera
+
+IMPORTANT SCOPE NOTICE
+This license applies only to original code and other materials in Axytube.js that are owned by Axynera ("Axynera Materials"). It does not replace, narrow, or revoke licenses granted by third-party rights holders for their materials. In particular, inherited code from YouTube.js by LuanRT remains subject to the MIT License reproduced in the THIRD-PARTY LICENSE section below. Where a file contains third-party material, its applicable third-party license continues to govern that material.
+
+1. PERMISSION REQUIRED
+Unless Axynera gives you prior written permission, you may not:
+- use Axynera Materials for commercial purposes;
+- redistribute, publish, sell, sublicense, or provide copies of Axynera Materials, whether modified or unmodified; or
+- remove, obscure, or misrepresent Axynera copyright notices, attribution, or provenance notices.
+
+2. MODIFICATIONS AND SOURCE AVAILABILITY
+You may make private modifications to Axynera Materials for evaluation and personal, non-commercial use. You may not distribute those modifications without prior written permission from Axynera. If Axynera authorizes distribution of a modified version in writing, you must:
+- provide the corresponding source code for the Axynera Materials you modified;
+- license those Axynera Materials and modifications under this Axynera License, unless Axynera expressly agrees otherwise in writing; and
+- retain this license and all applicable copyright and attribution notices.
+
+3. NO TRADEMARK LICENSE
+This license does not grant permission to use the Axynera name, logos, or trademarks except to accurately identify the project and its origin.
+
+4. THIRD-PARTY MATERIALS
+Third-party code and materials are not relicensed by this document. You are responsible for complying with the licenses that apply to them. The MIT license for inherited YouTube.js code is included below for clarity and must be preserved for that code.
+
+5. NO WARRANTY
+Axynera Materials are provided "AS IS", without warranty of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose, and non-infringement. To the maximum extent permitted by law, the authors and copyright holders shall not be liable for any claim, damages, or other liability arising from the use of Axynera Materials.
+
+6. CONTACT AND PERMISSIONS
+For written permission or questions about these terms, contact the Axynera project maintainers through:
+https://github.com/axynera/axytube
+
+THIRD-PARTY LICENSE — MIT LICENSE
 Copyright (c) 2021 LuanRT
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
