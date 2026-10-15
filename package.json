@@ -1,7 +1,7 @@
 {
   "name": "axytube.js",
   "version": "18.1.0",
-  "description": "A JavaScript client for YouTube's private API, known as InnerTube.",
+  "description": "Axytube.js is Axynera's JavaScript client for accessing YouTube's InnerTube API across Node.js, Deno, browsers, and other supported runtimes.",
   "type": "module",
   "types": "./dist/src/platform/lib.d.ts",
   "typesVersions": {
