@@ -24,11 +24,11 @@ class Cache implements ICache {
   }
 
   static get temp_directory() {
-    return `${os.tmpdir()}/youtubei.js`;
+    return `${os.tmpdir()}/axytube.js`;
   }
 
   static get default_persistent_directory() {
-    return path.resolve(__dirname__, '..', '..', '.cache', 'youtubei.js');
+    return path.resolve(__dirname__, '..', '..', '.cache', 'axytube.js');
   }
 
   get cache_dir() {
