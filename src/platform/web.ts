@@ -26,7 +26,7 @@ class Cache implements ICache {
     if (!indexedDB) return Log.warn(CACHE_TAG, 'IndexedDB is not supported. No cache will be used.');
 
     return new Promise<IDBDatabase>((resolve, reject) => {
-      const request = indexedDB.open('youtubei.js', 1);
+      const request = indexedDB.open('axytube.js', 1);
       request.onsuccess = function () {
         resolve(this.result);
       };
