@@ -57,11 +57,10 @@
       "default": "./dist/src/platform/cf-worker.js"
     }
   },
-  "author": "LuanRT <luan.lrt4@gmail.com> (https://github.com/LuanRT)",
-  "funding": [
-    "https://github.com/sponsors/LuanRT"
-  ],
+  "author": "Axynera (https://github.com/axynera)",
   "contributors": [
+    "Axynera (https://github.com/axynera)",
+    "LuanRT (original YouTube.js author; https://github.com/LuanRT)",
     "Wykerd (https://github.com/wykerd/)",
     "MasterOfBob777 (https://github.com/MasterOfBob777)",
     "patrickkfkan (https://github.com/patrickkfkan)",
@@ -128,6 +127,7 @@
   },
   "homepage": "https://github.com/axynera/axytube#readme",
   "keywords": [
+    "axytube",
     "api",
     "youtube",
     "innertube",
