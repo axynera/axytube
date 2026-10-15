@@ -12,7 +12,7 @@
       <img src="https://luanrt.github.io/assets/img/ytjs.svg" alt="Axytube.js Logo" width="200" />
     </a>
   </p>
-  <p>A JavaScript client for YouTube's internal API.<br/>Works on Node.js, Deno, modern browsers, and more.</p>
+  <p>Axytube.js is Axynera's JavaScript client for accessing YouTube's InnerTube API.<br/>Built for Node.js, Deno, browsers, and other supported JavaScript runtimes.</p>
 
 [![Discord](https://img.shields.io/badge/discord-online-brightgreen.svg)][discord]
 [![NPM Version](https://img.shields.io/npm/v/axytube.js?color=%2335C757)][versions]
