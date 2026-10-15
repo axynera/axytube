@@ -9,5 +9,6 @@
   ],
   "hidePageHeader": true,
   "typeDeclarationFormat": "table",
-  "tsconfig": "tsconfig.json"
+  "tsconfig": "tsconfig.json",
+  "name": "Axytube.js"
 }
