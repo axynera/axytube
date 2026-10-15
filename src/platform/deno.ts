@@ -18,11 +18,11 @@ class Cache implements ICache {
   }
 
   static get temp_directory() {
-    return `${Deno.env.get('TMPDIR') || Deno.env.get('TMP') || Deno.env.get('TEMP') || '/tmp'}/youtubei.js`;
+    return `${Deno.env.get('TMPDIR') || Deno.env.get('TMP') || Deno.env.get('TEMP') || '/tmp'}/axytube.js`;
   }
 
   static get default_persistent_directory() {
-    return `${Deno.cwd()}/.cache/youtubei.js`;
+    return `${Deno.cwd()}/.cache/axytube.js`;
   }
 
   get cache_dir() {
