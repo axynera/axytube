@@ -1,29 +1,24 @@
 <!-- BADGE LINKS -->
 [npm]: https://www.npmjs.com/package/axytube.js
 [versions]: https://www.npmjs.com/package/axytube.js?activeTab=versions
-[codefactor]: https://www.codefactor.io/repository/github/luanrt/youtube.js
 [actions]: https://github.com/axynera/axytube/actions
 [discord]: https://discord.gg/syDu7Yks54
 
 <div align="center">
-  <br/>
-  <p>
-    <a href="https://github.com/axynera/axytube">
-      <img src="https://luanrt.github.io/assets/img/ytjs.svg" alt="Axytube.js Logo" width="200" />
-    </a>
-  </p>
-  <p>Axytube.js is Axynera's JavaScript client for accessing YouTube's InnerTube API.<br/>Built for Node.js, Deno, browsers, and other supported JavaScript runtimes.</p>
+
+# Axytube.js
+
+<p>Axynera's JavaScript client for YouTube's InnerTube API, built for Node.js, Deno, browsers, and other supported JavaScript runtimes.</p>
 
 [![Discord](https://img.shields.io/badge/discord-online-brightgreen.svg)][discord]
 [![NPM Version](https://img.shields.io/npm/v/axytube.js?color=%2335C757)][versions]
 [![Downloads](https://img.shields.io/npm/dt/axytube.js)][npm]
-[![Codefactor](https://www.codefactor.io/repository/github/luanrt/youtube.js/badge)][codefactor]
 
 </div>
 
 ## Installation
 
-Before installing, make sure your environment meets the [prerequisites](https://ytjs.dev/guide/getting-started.html#prerequisites).
+Requirements: a supported JavaScript runtime and a package manager. See the [local API reference](./docs/api/README.md) for exported APIs.
 
 ```bash
 # NPM
@@ -39,27 +34,29 @@ npm install github:axynera/axytube
 deno add npm:axytube.js@latest
 ```
 
-Deno (deprecated):
-```ts
-import { Innertube } from 'https://deno.land/x/youtubei/deno.ts';
-```
-
 ## Basic Usage
 
 ```ts
-import { Innertube } from 'axytube.js';
-const innertube = await Innertube.create(/* options */);
+import { Axytube, UniversalCache } from 'axytube.js';
+
+const axytube = await Axytube.create({
+  cache: new UniversalCache(true)
+});
 ```
 
-For detailed usage, read the [Axytube.js Guide and API Documentation](https://ytjs.dev).
+For detailed API information, start with the [Axytube.js API reference](./docs/api/README.md).
 
 ## Contributing
 All contributions are welcome, big or small. If you want to contribute, take a look at the [issues page](https://github.com/axynera/axytube/issues) and our [guidelines](https://github.com/axynera/axytube/blob/main/CONTRIBUTING.md).
 
 ## Contributors
-<a href="https://github.com/LuanRT/Axytube.js/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=LuanRT/Axytube.js" />
+<a href="https://github.com/axynera/axytube/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=axynera/axytube" />
 </a>
+
+## Upstream attribution
+
+Axytube.js is derived from [YouTube.js](https://github.com/LuanRT/YouTube.js), originally created by LuanRT and contributors. The public `Innertube` export remains available for compatibility; `Axytube` is an additional branded alias.
 
 ## Disclaimer
 This project is not affiliated with, endorsed, or sponsored by YouTube or any of its affiliates or subsidiaries. All trademarks, logos, and brand names used in this project are the property of their respective owners and are used solely to describe the services provided.
